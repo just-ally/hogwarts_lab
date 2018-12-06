@@ -1,0 +1,6 @@
+<p>All the Houses!</p>
+
+<% for house in @houses %>
+  <p>Name: <%= house.name() %></p>
+  <img src=<%= house.url() %> alt="House Logo">
+<% end %>

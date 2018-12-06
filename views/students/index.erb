@@ -1,0 +1,12 @@
+<p>All the Students!!</p>
+
+<% for student in @students %>
+  <p>First Name: <%= student.first_name() %></p>
+  <p>Last Name: <%= student.last_name() %></p>
+  <p>House: <%= student.house %></p>
+  <p>Age: <%= student.age %></p>
+  <p><a href="/student/<%= student.id %>">Show Student</a></p>
+
+  <hr />
+
+<% end %>
